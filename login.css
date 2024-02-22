@@ -2,18 +2,31 @@
     box-sizing: border-box;
     margin: 0;
 }
-body{
-    background-image: url(loginbg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+body{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .container{
-    background-color: white;
+    width: 50vw;
+    background-color: rgb(255, 255, 255);
     margin: auto;
+    padding: 3%;
+    border: 1px solid red;
+}
+form{
+    width: 100%;
 }
 
-form >a> i{
-    border: 2px solid red;
-    padding: 15px;
+input{
+    width: 90%;
+    background-color: white;
+    border: 1px solid grey;
+    padding: 0.3vw;
+    
+    margin-bottom: 2vw;
+}
+
+#title{
+    font-size: 2em;
 }
