@@ -1,3 +1,6 @@
+let first_name = document.getElementById("firstname").value
+let last_name = document.getElementById("lastname").value
+let password = document.getElementById("password").value
 document.getElementById('form').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -14,3 +17,5 @@ document.getElementById('form').addEventListener('submit', function(event) {
         alert('Valami hiányzik! 😓');
       }
   });
+
+document.getElementById("name").value = "magizsolt"
