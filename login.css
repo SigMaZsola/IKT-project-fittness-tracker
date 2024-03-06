@@ -1,32 +1,58 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --main-lightblue: #60B2E5;
+    --secondary-darkblue: #223c4d;}
+*{
     box-sizing: border-box;
     margin: 0;
-}
-body{    
+    padding: 0;}
+body{
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-.container{
-    width: 50vw;
-    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    background-color: rgb(255, 255, 255);}
+.container-self{
     margin: auto;
-    padding: 3%;
-    border: 1px solid red;
-}
-form{
-    width: 100%;
-}
-
-input{
-    width: 90%;
     background-color: white;
-    border: 1px solid grey;
-    padding: 0.3vw;
-    
-    margin-bottom: 2vw;
-}
-
-#title{
-    font-size: 2em;
-}
+    min-height: 60vh;
+    padding: 2vw;
+    box-shadow: 2px 6px 40px -15px rgba(0,0,0,0.75);
+    border-radius: 25px;}
+label{
+    color: rgb(68, 68, 68);}
+form{ 
+    width: 100%;}
+input{
+    padding: 5px;
+    margin-bottom: 2vh;
+    width: 100%;
+    border-radius: 8px;}
+input[type="text"],input[type="password"]{
+    background-color: white;
+    border: 1px solid grey;}
+input[type="text"]:hover,input[type="password"]:hover{
+    border: 1px solid var(--secondary-darkblue);
+    transition: ease-out 0.23s;}
+input[type="text"]:focus,input[type="password"]:focus{
+    outline: 2px solid var(--main-lightblue); 
+    border: none;
+    transition: 0s;}
+input[type="submit"]{
+    background-color: var(--main-lightblue);
+    border: none;
+    color: rgb(22, 22, 22);}
+input[type="submit"]:hover{
+    background-color: var(--secondary-darkblue);
+    color: white;
+    box-shadow: 2px 6px 40px -15px rgba(0,0,0,0.75);
+    transition-duration: 0.3s;}
+#pagename{
+    text-align: center;
+    font-weight: 800;
+    font-size: 2rem;}
+a{
+    color: var(--main-lightblue);
+    text-decoration: none;}
+a:hover{
+    color: var(--secondary-darkblue);
+    transition-duration: 0.3s;}
