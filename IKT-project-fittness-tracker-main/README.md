@@ -1,1 +1,0 @@
-# IKT-project-fittness-tracker
