@@ -10,30 +10,50 @@ body{
     display: flex;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(315deg, hsla(204, 39%, 22%, 1) 0%, hsla(203, 72%, 64%, 1) 100%);}
+    background-color: rgb(255, 255, 255);}
 .container-self{
     margin: auto;
     background-color: white;
-    min-height: 90vh;
+    height: 95vh;
+    padding: 2vw;
+    box-shadow: 2px 6px 40px -15px rgba(0,0,0,0.75);
+    border-radius: 25px;}
+.divider{
+    height: 1px;
+    width: 100%;
+    background-color: darkgrey;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.side-nav{
+    width: 25%;
+    min-width: 300px;
+    height: 80%;
+    background-color: white;
+    padding: 2vw;
+    box-shadow: 2px 6px 40px -15px rgba(0,0,0,0.75);
+    border-radius: 25px;}
+.nav-top{
+    min-height: 5vh;
+    background-color: white;
     padding: 2vw;
     box-shadow: 2px 6px 40px -15px rgba(0,0,0,0.75);
     border-radius: 25px;
-    display: flex;}
-.nav{
-    width: 100%;
-    max-height: 5vh;
-    margin-left: 2vw;
-}
-.sidebar{
-    min-height: 80vh;
-    min-width: 20vw;
-    border: 1px solid rgb(219, 219, 219);
-    border-radius: 25px;
-    background-color: white;
-    box-shadow: 2px 6px 40px -15px rgba(0,0,0,0.55);
-}
-
+    margin-bottom: 2vh;}
 #pagename{
-    text-align: center;
     font-weight: 800;
-    font-size: 2rem;}
+    font-size: 1.8rem;
+    margin: 0;}
+#profilepic{
+    background-color: grey;
+    height: 10vh;
+    width: 10vh;}
+.name-data{
+    margin-left: 5%;}
+#username{
+    height: max-content;
+    width: 100%;}
+.genderage{
+    height: max-content;}
+.sect2{
+    height: 25%;}
