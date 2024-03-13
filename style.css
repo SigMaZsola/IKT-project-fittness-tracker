@@ -28,7 +28,7 @@ body{
 .side-nav{
     width: 25%;
     min-width: 300px;
-    height: 70vh;
+    height: 80%;
     background-color: white;
     padding: 2vw;
     box-shadow: 2px 6px 40px -15px rgba(0,0,0,0.75);
@@ -40,17 +40,6 @@ body{
     box-shadow: 2px 6px 40px -15px rgba(0,0,0,0.75);
     border-radius: 25px;
     margin-bottom: 2vh;}
-
-.main-nav{
-    margin-left: 100px;
-    width: 65%;
-    min-width: 300px;
-    height: 70vh;
-    background-color: rgb(136, 136, 136);
-    padding: 2vw;
-    box-shadow: 2px 6px 40px -15px rgba(0,0,0,0.75);
-    border-radius: 25px;
-}
 #pagename{
     font-weight: 800;
     font-size: 1.8rem;
@@ -68,82 +57,26 @@ body{
     height: max-content;}
 .sect2{
     height: 25%;}
-
-#app{
-    font: 14px;
-    border-collapse: collapse;
+a{
+    text-decoration: none;
+    color: var(--secondary-darkblue);
+}a:hover{
+    color: #60B2E5;
+    transition: ease-in-out ;
+    transition-duration: 0.3s;
+    transition-delay: 0.1s;
 }
-
-#app th{
-    font-size: 1.15em;
-    text-align: left;
-    font-weight: normal;
+li{
+    margin: auto;
+    padding-bottom: 3vh;
+    list-style-type: none;}
+ul{padding: 0;}
+#logout{
+    width: 95%;
+    border: none;
+    border-radius: 8px;
+    background-color: #223c4d;
     color: white;
-    background-color: #60B2E5;
-}
-
-#app th, #app td{
-    padding: 0.75em;
-}
-
-.tracker__entries .tracker__row{
-    background-color: rgb(163, 182, 189);
-}
-.tracker__entries .tracker__row:nth-child(odd){
-    background-color: #e7e7e7;
-}
-
-.tracker__date,
-.tracker__workout,
-.tracker__duration{
-    display: inline-block;
-    box-sizing: border-box;
-    font-size: 1em;
-    height: 2.5em;
-    padding: 0.5em 0em;
-    border: none;
-    outline: none;
-    background: none;
-}
-
-.tracker__duration{
-    width: 5em;
-    text-align: right;
-}
-.tracker__delete{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: none;
-    border: none;
-    outline: none;
-    color: red;
-    font-size: 1.5em;
-    margin-left: 0.5em;
-    cursor: pointer;
-}
-
-.tracker__delete:hover{
-    background: rgba(0,0,0, 0.1);
-}
-.tracker__row--add{
-    border-top:  3px solid rgb(29, 29, 29);
-    border-bottom:  3px solid rgb(29, 29, 29);
-    background: white;
-}
-
-.tracker__row--add td{
-    text-align: right;
-}
-
-.tracker__add{
-    display: inline-block;
-    padding: 0.8em 1em;
-    color: green;
-    cursor: pointer;
-}
-
-.tracker__add:hover{
-    background-color: rgba(0,0,0,0.1);
+    padding:2%;
+    font-weight: bold;
 }
