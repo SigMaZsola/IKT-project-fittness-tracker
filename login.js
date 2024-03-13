@@ -16,13 +16,13 @@ document.getElementById('form').addEventListener('submit', function(event) {
       }
     });
     if (allFilled) {
-        window.location.href = 'setup.html';
+        window.location.href = 'index.html';
       } else {
         alert('Valami hiányzik! 😓');
       }
     
     if (!not_long){
-      alert('Minimum 8 karakter hosszúnak kell lennie mindennek! 😓');
+      alert('Minimum 8 karakter hosszúnak kell lennie a jelszónak! 😓');
     }
   });
 

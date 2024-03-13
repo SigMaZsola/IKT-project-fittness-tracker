@@ -56,3 +56,14 @@ a{
 a:hover{
     color: var(--secondary-darkblue);
     transition-duration: 0.3s;}
+
+button{
+    background-color: var(--main-lightblue);
+    border: none;
+    border-radius: 40px;
+    color: rgb(22, 22, 22);}
+button:hover{
+    background-color: var(--secondary-darkblue);
+    color: white;
+    box-shadow: 2px 6px 40px -15px rgba(0,0,0,0.75);
+    transition-duration: 0.3s;}
