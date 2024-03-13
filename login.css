@@ -14,7 +14,7 @@ body{
 .container-self{
     margin: auto;
     background-color: white;
-    min-height: 60vh;
+    min-height: 70vh;
     padding: 2vw;
     box-shadow: 2px 6px 40px -15px rgba(0,0,0,0.75);
     border-radius: 25px;}
@@ -22,26 +22,28 @@ label{
     color: rgb(68, 68, 68);}
 form{ 
     width: 100%;}
-input{
+input,button{
     padding: 5px;
     margin-bottom: 2vh;
     width: 100%;
     border-radius: 8px;}
-input[type="text"],input[type="password"]{
+input[type="text"],input[type="password"],input[type="number"]{
     background-color: white;
     border: 1px solid grey;}
-input[type="text"]:hover,input[type="password"]:hover{
+input[type="text"]:hover,input[type="password"]:hover,input[type="number"]:hover{
     border: 1px solid var(--secondary-darkblue);
     transition: ease-out 0.23s;}
-input[type="text"]:focus,input[type="password"]:focus{
+input[type="text"]:focus,input[type="password"]:focus,input[type="number"]:focus{
     outline: 2px solid var(--main-lightblue); 
     border: none;
     transition: 0s;}
-input[type="submit"]{
+button{
+    width: 100%;
     background-color: var(--main-lightblue);
     border: none;
+
     color: rgb(22, 22, 22);}
-input[type="submit"]:hover{
+button:hover{
     background-color: var(--secondary-darkblue);
     color: white;
     box-shadow: 2px 6px 40px -15px rgba(0,0,0,0.75);
@@ -55,15 +57,4 @@ a{
     text-decoration: none;}
 a:hover{
     color: var(--secondary-darkblue);
-    transition-duration: 0.3s;}
-
-button{
-    background-color: var(--main-lightblue);
-    border: none;
-    border-radius: 40px;
-    color: rgb(22, 22, 22);}
-button:hover{
-    background-color: var(--secondary-darkblue);
-    color: white;
-    box-shadow: 2px 6px 40px -15px rgba(0,0,0,0.75);
     transition-duration: 0.3s;}

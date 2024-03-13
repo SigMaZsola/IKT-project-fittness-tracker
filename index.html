@@ -17,15 +17,14 @@
                 <div></div>
                 <div class="name-wrapper d-flex align-items-center">
                     <img src="defa-pic.jpg" alt="" class="rounded-circle img-fluid" id="profilepic">
-                    <div class="name-data"><h5 id="username">User Username</h5>
+                    <div class="name-data">
+                        <h5 id="firstname"></h5><h5 id="lastname"></h5>
                         <div class="genderage">
-                            <span>Male</span>,<span>16 years</span>
+                            <span id="gender"></span> <span id="age"></span>
                         </div>
                     </div>
                 </div>
             </section>
-            <div class="divider"></div>
-            <section class="sect2"></section>
             <div class="divider"></div>
             <section class="sect3">
                 <ul>
@@ -35,10 +34,24 @@
                     <li><a href=""><i class="fa-solid fa-gear"></i> Settings</a></li>
                 </ul>
            </section>
-           <button id="logout"><i class="fa-solid fa-arrow-right-from-bracket" style="padding: 5px;"></i>LOGOUT</button>
+           <button id="logout" ><i class="fa-solid fa-arrow-right-from-bracket" style="padding: 5px;"></i>LOGOUT</button>
         </div>
     </div>
-    <script src="main.js" defer></script>
+    <script>
+        var firstname = localStorage.getItem("firstname");
+        var lastname = localStorage.getItem("lastname");
+        var age = localStorage.getItem("age");
+        var gender = localStorage.getItem("nemvalasz");
+
+        document.getElementById("firstname").textContent = firstname;
+        document.getElementById("lastname").textContent = lastname;
+        document.getElementById("age").textContent = age;
+        document.getElementById("gender").textContent = gender;
+
+        document.getElementById("logout").addEventListener("click", function(){
+            window.location.href = "login.html"
+        })
+    </script>
     <script src="https://kit.fontawesome.com/a089b9ac6f.js" crossorigin="anonymous"></script>
 </body>
 </html>

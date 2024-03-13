@@ -25,4 +25,3 @@ document.getElementById('form').addEventListener('submit', function(event) {
       alert('Minimum 8 karakter hosszúnak kell lennie a jelszónak! 😓');
     }
   });
-
